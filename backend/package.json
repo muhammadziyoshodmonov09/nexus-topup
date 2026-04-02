@@ -1,0 +1,28 @@
+{
+  "name": "nexus-topup-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "node dist/server.js",
+    "build": "tsc",
+    "seed": "tsx src/db/seed.ts",
+    "db:push": "drizzle-kit push"
+  },
+  "dependencies": {
+    "@fastify/cors": "^10.0.0",
+    "@fastify/jwt": "^9.0.0",
+    "dotenv": "^16.4.0",
+    "drizzle-orm": "^0.38.0",
+    "fastify": "^5.2.0",
+    "google-auth-library": "^9.14.0",
+    "postgres": "^3.4.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "drizzle-kit": "^0.30.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}
